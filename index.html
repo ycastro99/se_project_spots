@@ -3,11 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>git-diff in action</title>
+    <meta name="author" content="Alejandro Castro" />
+    <meta
+      name="description"
+      content="Spots social media platform, created to upload and share your favorite places with the world"
+    />
+    <meta
+      name="keywords"
+      content="photo sharing, image upload, upload pictures, share photos online, free photo hosting, photo gallery, online albums, picture sharing site, cloud photo storage, high-resolution images"
+    />
+    <title>Spots</title>
     <link rel="stylesheet" href="vendor/normalize.css" />
+    <link rel="stylesheet" href="blocks/nav.css" />
     <link rel="stylesheet" href="pages/index.css" />
+    <link rel="icon" href="./favicon.ico" type="image/upload-icon" />
   </head>
   <body>
-    <h1>Comparison Text</h1>
+    <div class="page">
+      <header class="header">
+        <nav>
+          <div class="header__logo">
+            <img
+              src="images/Logo.svg"
+              alt="Spots Logo"
+              class="header__logo-img"
+              width="94"
+              height="26"
+            />
+          </div>
+        </nav>
+      </header>
+
+      <section class="profile">
+        <div class="profile__inner">
+          <div class="avatar">
+            <img
+              src="images/avatar_mariana.png"
+              alt="User Avatar"
+              class="avatar__image"
+            />
+          </div>
+          <div class="profile__info">
+            <h2 class="profile__name">Mariana Pajón</h2>
+            <p class="profile__bio">
+              🇨🇴 Olympic BMX Champ (2🥇1🥈) 🚴‍♀️ From Medellín to the world 💫
+              Riding with heart & purpose ❤️‍🔥
+            </p>
+            <div class="profile__edit">
+              <button class="profile__edit-button">Edit Profile</button>
+            </div>
+          </div>
+          <div class="new__post">
+            <button class="new__post-button">
+              <img src="images/add_icon.svg" alt="add_icon" class="add__icon" />
+              New Post
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="gallery__grid">
+          <div class="gallery__item">
+            <img src="" alt="" class="gallery__image" />
+            <div class="gallery__caption">
+              <span class="gallery__name"> </span>
+              <span class="gallery__icon"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer"></footer>
+    </div>
   </body>
 </html>
