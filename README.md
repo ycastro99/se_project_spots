@@ -5,6 +5,7 @@
 - Project Description
 - Functionality
 - Technologies Used in the Project
+- Video Page Overview
 
 **Project Description**
 
@@ -23,4 +24,7 @@ Spots is a responsive social media platform designed for sharing favorite places
 -CSS3
 -BEM for CSS
 ![alt text](image.png)
+
 -Google Fonts
+
+**Video Link-Google Drive**
