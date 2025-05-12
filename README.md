@@ -24,12 +24,12 @@ Spots is a responsive social media platform designed for sharing favorite places
 -HMTL5
 -CSS3
 -BEM for CSS
-![alt text](image.png)
+![alt text](bem-structure.png)
 
 -Google Fonts
 
 **Deployment Link**
 
-[Deployment Link] (https://ycastro99.github.io/se_project_spots/)
+[Deployment Link](https://ycastro99.github.io/se_project_spots/)
 
 **Video Link-Google Drive**
