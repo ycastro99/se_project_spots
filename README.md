@@ -5,6 +5,7 @@
 - Project Description
 - Functionality
 - Technologies Used in the Project
+- Deployment Link
 - Video Page Overview
 
 **Project Description**
@@ -26,5 +27,9 @@ Spots is a responsive social media platform designed for sharing favorite places
 ![alt text](image.png)
 
 -Google Fonts
+
+**Deployment Link**
+
+[Deployment Link] (https://ycastro99.github.io/se_project_spots/)
 
 **Video Link-Google Drive**
