@@ -50,14 +50,13 @@
   -webkit-line-clamp: 3;
   overflow: hidden;
   text-overflow: ellipsis;
-  line-height: 1.2em;
-  max-height: calc(1.2em * 3);
+  line-height: 100%;
   margin: 0;
   padding: 0;
   max-width: 100%;
   font-size: 32px;
-  font-weight: 600;
-  color: rgba(0, 0, 0, 1);
+  font-weight: 500;
+  color: rgba(33, 33, 33, 1);
 }
 
 .profile__bio {
@@ -70,7 +69,8 @@
   padding: 0;
   max-width: 100%;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
+  line-height: 100%;
   color: rgba(33, 33, 33, 0.7);
 }
 
@@ -113,8 +113,10 @@
 .new__post {
   display: flex;
   align-items: flex-end;
-  margin-top: auto;
+  /* margin-top: auto;
+  margin-left: auto; */
   margin-left: auto;
+  align-self: flex-end;
 }
 .add__icon {
   display: flex;
@@ -155,13 +157,13 @@
   }
 }
 
-@media screen and (min-width: 894px) {
+/* @media screen and (min-width: 894px) {
   .new__post {
     position: absolute;
     right: 0;
     bottom: 20px;
   }
-}
+} */
 
 @media screen and (max-width: 893px) and (min-width: 769px) {
   .new__post {
