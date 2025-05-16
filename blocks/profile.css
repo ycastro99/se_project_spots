@@ -113,8 +113,6 @@
 .new__post {
   display: flex;
   align-items: flex-end;
-  /* margin-top: auto;
-  margin-left: auto; */
   margin-left: auto;
   align-self: flex-end;
 }
@@ -156,14 +154,6 @@
     width: calc(100% - 80px);
   }
 }
-
-/* @media screen and (min-width: 894px) {
-  .new__post {
-    position: absolute;
-    right: 0;
-    bottom: 20px;
-  }
-} */
 
 @media screen and (max-width: 893px) and (min-width: 769px) {
   .new__post {
