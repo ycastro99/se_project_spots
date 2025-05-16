@@ -13,16 +13,8 @@
       content="photo sharing, image upload, upload pictures, share photos online, free photo hosting, photo gallery, online albums, picture sharing site, cloud photo storage, high-resolution images"
     />
     <title>Spots</title>
-    <link rel="stylesheet" href="vendor/normalize.css" />
-    <link rel="stylesheet" href="vendor/fonts/fonts.css" />
     <link rel="stylesheet" href="pages/index.css" />
     <link rel="icon" href="./favicon.ico" type="image/upload-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <div class="page">
@@ -45,33 +37,30 @@
       <main>
         <section class="profile">
           <div class="profile__inner">
-            <div class="avatar">
-              <img
-                src="images/avatar_mariana.png"
-                alt="User Avatar"
-                class="avatar__image"
-              />
-            </div>
+            <img
+              src="images/avatar_mariana.png"
+              alt="User Profile Picture"
+              class="profile__image"
+            />
+
             <div class="profile__info">
               <h2 class="profile__name">Mariana Pajón</h2>
               <p class="profile__bio">
                 🇨🇴 Olympic BMX Champ (2🥇1🥈) 🚴‍♀️ From Medellín to the world 💫
                 Riding with heart & purpose ❤️‍🔥
               </p>
-              <div class="profile__edit">
-                <button class="profile__edit-button">
-                  <span class="edit__icon"
-                    ><img
-                      src="images/edit_icon.png"
-                      alt="pen edit icon"
-                      class="edit__icon-image"
-                  /></span>
-                  Edit Profile
-                </button>
-              </div>
+
+              <button class="profile__edit-button" type="button">
+                <img
+                  src="images/edit_icon.png"
+                  alt="pen edit icon"
+                  class="profile__edit-icon"
+                />
+                Edit Profile
+              </button>
             </div>
             <div class="new__post">
-              <button class="new__post-button">
+              <button class="new__post-button" type="button">
                 <img
                   src="images/add_icon.svg"
                   alt="symbol to add a picture"
