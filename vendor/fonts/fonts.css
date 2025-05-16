@@ -5,9 +5,8 @@
   src: url("Poppins/Poppins-Medium.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Inter";
+  font-family: "Poppins";
   font-style: normal;
-  font-weight: 500;
-  src: url("Inter-font/Inter-Italic-VariableFont_opsz\,wght.ttf")
-    format("truetype");
+  font-weight: 400;
+  src: url("Poppins/Poppins-Regular.ttf") format("truetype");
 }
