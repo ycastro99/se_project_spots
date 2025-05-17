@@ -33,3 +33,4 @@ Spots is a responsive social media platform designed for sharing favorite places
 [Deployment Link](https://ycastro99.github.io/se_project_spots/)
 
 **Video Link-Google Drive**
+[[Link to video](https://drive.google.com/file/d/1UECLSkKd84ZxncVFgaRrmKHCcapos3Nm/view?usp=sharing)]
