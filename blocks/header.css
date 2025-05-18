@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 16px 0;
+  padding: 10px 0;
   width: 100%;
 }
 .header__logo {
@@ -17,21 +17,4 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
-
-.header__title {
-  margin: 0;
-  padding: 0;
 }

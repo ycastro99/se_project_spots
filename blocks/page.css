@@ -1,6 +1,8 @@
-body {
+.root {
   background-color: rgba(252, 245, 229, 1);
+  min-height: 100vh;
   margin: 0;
+  padding: 0;
 }
 .page {
   background-color: rgba(252, 245, 229, 1);

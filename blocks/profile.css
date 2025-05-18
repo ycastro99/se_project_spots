@@ -100,22 +100,7 @@
   padding-right: 8px;
 }
 
-.new__post {
-  display: flex;
-  align-items: flex-end;
-  margin-left: auto;
-  align-self: flex-end;
-}
-.new__post-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 12px;
-  height: 12px;
-  padding-right: 8px;
-}
-
-.new__post-button {
+.profile__new-post-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,14 +115,24 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 100%;
-  text-align: flex-start;
   font-style: normal;
+  margin-left: auto;
+  align-self: flex-end;
 }
-.new__post-button:hover {
+
+.profile__new-post-button:hover {
   cursor: pointer;
   opacity: 0.8;
 }
 
+.profile__new-post-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  padding-right: 8px;
+}
 @media screen and (max-width: 1100px) {
   .profile__inner {
     margin: 0 40px 20px;
@@ -145,16 +140,7 @@
   }
 }
 
-@media screen and (max-width: 893px) and (min-width: 769px) {
-  .new__post {
-    position: relative;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: 0;
-    width: 100%;
-    justify-content: flex-end;
-  }
-
+@media screen and (max-width: 893px) {
   .profile__inner {
     flex-wrap: wrap;
   }
@@ -162,13 +148,24 @@
   .profile__info {
     flex-basis: calc(100% - 210px);
   }
+  .profile__new-post-button {
+    position: relative;
+    margin: 0 auto;
+    width: 288px;
+    height: 52px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
 }
 
-@media screen and (max-width: 768px) and (min-width: 499px) {
+@media screen and (max-width: 768px) {
   .profile__inner {
     margin: 0 20px 20px;
     width: calc(100% - 40px);
     flex-wrap: wrap;
+    display: flex;
+    align-items: center;
   }
 
   .profile__name {
@@ -183,23 +180,18 @@
     flex-basis: calc(100% - 170px);
   }
 
-  .new__post {
+  .profile__new-post-button {
     position: relative;
-    margin-top: 20px;
-    margin-left: 0;
-    width: 100%;
-    justify-content: center;
-  }
-  .new__post-button {
-    font-size: 16px;
+    margin: 0 auto;
     width: 288px;
     height: 52px;
     justify-content: center;
     align-items: center;
+    font-size: 16px;
   }
 }
 
-@media screen and (max-width: 498px) and (min-width: 0px) {
+@media screen and (max-width: 498px) {
   .profile {
     padding: 20px 0 0;
   }
@@ -209,6 +201,8 @@
     text-align: center;
     margin: 0 16px 20px;
     width: calc(100% - 32px);
+    display: flex;
+    align-items: center;
   }
 
   .profile__image {
@@ -229,17 +223,13 @@
     justify-content: center;
   }
 
-  .new__post {
+  .profile__new-post-button {
     position: relative;
-    margin: 0 auto;
-    width: 100%;
-    justify-content: center;
-  }
-  .new__post-button {
-    font-size: 16px;
-    width: 288px;
+    margin: 0 16px;
+    width: calc(100% - 32px);
     height: 52px;
     justify-content: center;
     align-items: center;
+    font-size: 16px;
   }
 }
