@@ -9,6 +9,10 @@ const editProfileDescriptionInput = document.querySelector(
   "#profile-description-input"
 );
 
+const addCardFormElement = newPostModal.querySelector(".modal__form");
+const nameInput = newPostModal.querySelector("#profile-caption-input");
+const linkInput = newPostModal.querySelector("#profile-new-post-input");
+
 const profileNameEl = document.querySelector(".profile__name");
 const profileDescriptionEl = document.querySelector(".profile__bio");
 
@@ -37,3 +41,14 @@ function handleEditProfileSubmit(evt) {
 }
 
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);
+
+function handleAddCardSubmit(evt) {
+  evt.preventDefault();
+
+  console.log(nameInput.value);
+  console.log(linkInput.value);
+
+  newPostModal.classList.remove("modal_is-opened");
+}
+
+addCardFormElement.addEventListener("submit", handleAddCardSubmit);
