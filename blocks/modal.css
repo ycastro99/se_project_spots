@@ -61,6 +61,7 @@
   width: 100%;
 }
 .modal__input {
+  line-height: 1;
   display: block;
   box-sizing: border-box;
   width: 100%;
@@ -95,7 +96,7 @@
 
 @media screen and (max-width: 768px) {
   .modal__container {
-    padding: 12px;
+    padding: 22px 12px 12px;
   }
 
   .modal__close-button {
