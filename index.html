@@ -71,7 +71,27 @@
 
         <section class="gallery">
           <div class="gallery__grid">
-            <div class="gallery__item">
+            <template id="card-template">
+              <li class="gallery__item">
+                <img class="gallery__image" src="#" alt="" />
+                <div class="gallery__caption">
+                  <h3 class="gallery__name"></h3>
+                  <button
+                    aria-label="Like item"
+                    class="gallery__icon"
+                    type="button"
+                  >
+                    <img
+                      src="images/like_icon.svg"
+                      alt="heart icon"
+                      class="gallery__icon-image"
+                    />
+                  </button>
+                </div>
+              </li>
+            </template>
+
+            <!-- <div class="gallery__item">
               <img
                 src="images/6mariana__track.jpg"
                 alt="mariana's new BMX track"
@@ -177,7 +197,7 @@
                   />
                 </button>
               </div>
-            </div>
+            </div> -->
           </div>
         </section>
       </main>
