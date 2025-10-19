@@ -6,6 +6,7 @@
 
 .gallery__grid {
   display: grid;
+  list-style: none;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px 20px;
   justify-content: center;

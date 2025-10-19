@@ -117,7 +117,7 @@ addCardFormElement.addEventListener("submit", handleAddCardSubmit);
 
 initialCards.forEach((item) => {
   const cardElement = getCardElement(item);
-  document.querySelector(".gallery").appendChild(cardElement);
+  document.querySelector(".gallery__grid").appendChild(cardElement);
 });
 
 // initialCards.forEach(function (item) {
