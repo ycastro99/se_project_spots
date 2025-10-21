@@ -61,6 +61,16 @@ function getCardElement(data) {
     cardLikeBtnEl.classList.toggle("gallery__icon_active");
   });
 
+  const deleteButton = cardElement.querySelector(".gallery__delete-button");
+  deleteButton.addEventListener("click", () => {
+    cardElement.remove();
+  });
+  cardImage.addEventListener("click", () => {
+    previewModalImage.src = data.link;
+    previewModalImage.alt = data.name;
+    previewModalCaption.textContent = data.name;
+    openModal(previewModal);
+  });
   return cardElement;
 }
 
