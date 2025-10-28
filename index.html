@@ -73,12 +73,13 @@
           <div class="gallery__grid">
             <template id="card-template">
               <li class="card">
-                <img class="gallery__image" src="#" alt="" />
                 <button
                   aria-label="Delete item"
                   class="gallery__delete-button"
                   type="button"
                 ></button>
+                <img class="gallery__image" src="#" alt="" />
+
                 <div class="gallery__caption">
                   <h3 class="gallery__title"></h3>
                   <button
@@ -156,6 +157,18 @@
             </label>
             <button class="modal__save-button" type="submit">Save</button>
           </form>
+        </div>
+      </div>
+      <div class="modal" id="preview-modal">
+        <div class="modal__container modal__container_type_preview">
+          <button
+            class="modal__close-button modal__close-button_type_preview"
+            type="button"
+          >
+            <img src="images/close_icon.svg" alt="Close" />
+          </button>
+          <img class="modal__image" src="#" alt="" />
+          <p class="modal__caption"></p>
         </div>
       </div>
     </div>

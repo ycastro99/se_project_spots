@@ -16,12 +16,13 @@
   width: calc(100% - 160px);
 }
 
-.gallery__item {
+.card {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: auto;
   overflow: hidden;
+  position: relative;
 }
 
 .gallery__image {
@@ -32,6 +33,20 @@
   border-radius: 8px;
 }
 
+.gallery__delete-button {
+  width: 32px;
+  height: 32px;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: url("/images/delete_default.svg") no-repeat center / contain;
+}
+
+.gallery__delete-button:hover {
+  background-image: url("/images/delete_button.svg");
+  opacity: 1;
+}
 .gallery__caption {
   display: flex;
   justify-content: space-between;
@@ -39,7 +54,7 @@
   padding-top: 12px;
 }
 
-.gallery__name {
+.gallery__title {
   margin: 0;
   padding: 0;
   font-size: 20px;
@@ -76,32 +91,16 @@
   opacity: 0.4;
 }
 
-.gallery__delete-button {
-  position: relative;
-  top: 15px;
-  right: 15px;
-  width: 23px;
-  height: 20px;
-  border: none;
-  background: url("/images/delete_default.svg") no-repeat center / contain;
-  opacity: 0.4;
-  cursor: pointer;
-  transition: opacity 0.2s ease-in-out;
-  z-index: 1;
-}
-
-.gallery__delete-button:hover {
-  background-image: url("/images/delete_button.svg");
-  opacity: 1;
-}
-
-modal__container_type_preview {
-  position: relative;
-  background: transparent;
+.modal__container_type_preview {
+  background: none;
+  box-shadow: none;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   max-width: 80vw;
   max-height: 80vh;
-  border-radius: 0;
 }
 
 .modal__image {
@@ -109,19 +108,16 @@ modal__container_type_preview {
   max-width: 80vw;
   max-height: 80vh;
   width: auto;
-  height: auto;
   object-fit: contain;
+  border-radius: 0;
 }
 
 .modal__caption {
-  margin: 0;
-  padding: 8px 0 0 0;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 120%;
+  margin-top: 10px;
   color: #fff;
+  font-size: 14px;
+  text-align: center;
 }
-
 .modal__close-button_type_preview {
   position: absolute;
   top: -40px;
@@ -140,6 +136,15 @@ modal__container_type_preview {
   filter: brightness(0) invert(1);
 }
 
+.gallery__delete-button {
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s ease-in-out;
+}
+.gallery__delete-button:hover {
+  opacity: 1;
+}
+
 @media screen and (max-width: 1100px) {
   .gallery__grid {
     margin: 0 40px 0 40px;
@@ -156,7 +161,7 @@ modal__container_type_preview {
     padding-bottom: 30px;
     width: calc(100% - 40px);
   }
-  .gallery__name {
+  .gallery__title {
     line-height: 110%;
     font-size: 16px;
   }
@@ -169,4 +174,9 @@ modal__container_type_preview {
     padding-bottom: 20px;
     width: calc(100% - 32px);
   }
+}
+
+.modal__close-button_type_preview {
+  top: -35px;
+  right: 0;
 }
