@@ -133,8 +133,3 @@
     width: calc(100% - 32px);
   }
 }
-
-.modal__close-button_type_preview {
-  top: -35px;
-  right: 0;
-}
