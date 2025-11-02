@@ -103,7 +103,7 @@
   max-height: 80vh;
   width: 100%;
   object-fit: contain;
-  border-radius: 0;
+  border-radius: 10px;
 }
 
 .modal__caption {
@@ -145,11 +145,7 @@
     right: 12px;
     top: 12px;
   }
-  .modal__image {
-    width: calc(100vw - 32px);
-    border-radius: 10px;
-    max-width: none;
-  }
+
   .modal__title {
     font-size: 20px;
     margin-bottom: 24px;
@@ -168,10 +164,17 @@
   }
   .modal__close-button_type_preview {
     top: -48px;
-    right: 0;
+    right: 0px;
     background: black;
     border: none;
     cursor: pointer;
     opacity: 0.7;
+  }
+}
+@media screen and (max-width: 420px) {
+  .modal__image {
+    width: calc(100vw - 32px);
+    border-radius: 10px;
+    max-width: none;
   }
 }
