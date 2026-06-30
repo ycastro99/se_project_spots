@@ -38,7 +38,3 @@ and some challenges I faced while building it:
 
 [[Spots Stage 1](https://drive.google.com/file/d/1UECLSkKd84ZxncVFgaRrmKHCcapos3Nm/view?usp=sharing)]
 [[Spots Stage 2](https://www.loom.com/share/97324bb9870d41f78774a96a8b9833ea)]
-<<<<<<< HEAD
-
-=======
->>>>>>> 1ac0bc0 (update readme)
