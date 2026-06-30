@@ -10,7 +10,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: visibility 0.3s, opacity 0.3s;
+  transition:
+    visibility 0.3s,
+    opacity 0.3s;
   padding: 0 10px 0 10px;
 }
 .modal_is-opened {
@@ -39,7 +41,9 @@
 .modal__close-button:hover {
   opacity: 1;
   cursor: pointer;
-  transition: visibility 0.3s, opacity 0.3s;
+  transition:
+    visibility 0.3s,
+    opacity 0.3s;
 }
 .modal__title {
   margin: 0 0 32px;
@@ -76,7 +80,26 @@
 .modal__input::placeholder {
   color: rgba(33, 33, 33, 0.3);
 }
-
+.modal__error {
+  display: block;
+  min-height: 18px;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.1;
+  color: rgba(255, 0, 0, 0.7);
+  visibility: hidden;
+}
+.modal__error_visible {
+  visibility: visible;
+}
+.modal__input_type_error {
+  border-color: rgba(255, 0, 0, 0.6);
+}
+.modal__save-button_disabled {
+  opacity: 0.5;
+  cursor: default;
+  pointer-events: none;
+}
 .modal__save-button {
   margin: 0;
   width: 156px;
@@ -92,6 +115,11 @@
 .modal__save-button:hover {
   background-color: rgba(33, 33, 33, 0.8);
   transition: background-color 0.3s;
+}
+.modal__save-button_disabled {
+  opacity: 0.5;
+  cursor: default;
+  pointer-events: none;
 }
 .modal__preview-container {
   position: relative;
